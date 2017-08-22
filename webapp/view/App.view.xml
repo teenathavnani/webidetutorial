@@ -1,5 +1,9 @@
 <mvc:View
+<<<<<<< HEAD
 	controllerName="zapp.controller.App"
+=======
+	controllerName="zemployee.controller.App"
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	busy="{appView>/busy}"

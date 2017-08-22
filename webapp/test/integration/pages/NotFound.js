@@ -2,7 +2,11 @@ sap.ui.define([
 		"sap/ui/test/Opa5",
 		"sap/ui/test/actions/Press",
 		"sap/ui/test/matchers/PropertyStrictEquals",
+<<<<<<< HEAD
 		"zapp/test/integration/pages/Common"
+=======
+		"zemployee/test/integration/pages/Common"
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 	], function(Opa5, Press, PropertyStrictEquals, Common) {
 		"use strict";
 

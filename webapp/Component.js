@@ -1,6 +1,7 @@
 sap.ui.define([
 		"sap/ui/core/UIComponent",
 		"sap/ui/Device",
+<<<<<<< HEAD
 		"zapp/model/models",
 		"zapp/controller/ListSelector",
 		"zapp/controller/ErrorHandler"
@@ -8,6 +9,15 @@ sap.ui.define([
 		"use strict";
 
 		return UIComponent.extend("zapp.Component", {
+=======
+		"zemployee/model/models",
+		"zemployee/controller/ListSelector",
+		"zemployee/controller/ErrorHandler"
+	], function (UIComponent, Device, models, ListSelector, ErrorHandler) {
+		"use strict";
+
+		return UIComponent.extend("zemployee.Component", {
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 
 			metadata : {
 				manifest : "json"

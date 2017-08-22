@@ -1,5 +1,9 @@
 sap.ui.define([
+<<<<<<< HEAD
 		"zapp/controller/App.controller",
+=======
+		"zemployee/controller/App.controller",
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 		"sap/m/SplitApp",
 		"sap/ui/core/Control",
 		"sap/ui/model/json/JSONModel",

@@ -4,6 +4,7 @@ sap.ui.define([
 		"use strict";
 
 		function getFrameUrl (sHash, sUrlParameters) {
+<<<<<<< HEAD
 			var sUrl = jQuery.sap.getResourcePath("zapp/app", ".html");
 			sHash = sHash || "";
 			sUrlParameters = sUrlParameters ? "?" + sUrlParameters : "";
@@ -63,6 +64,67 @@ sap.ui.define([
 			getMockServer : function () {
 				return new Promise(function (success) {
 					Opa5.getWindow().sap.ui.require(["zapp/localService/mockserver"], function (mockserver) {
+=======
+			var sUrl = jQuery.sap.getResourcePath("zemployee/app", ".html");
+			sHash = sHash || "";
+			sUrlParameters = sUrlParameters ? "?" + sUrlParameters : "";
+
+			if (sHash) {
+				sHash = "#employeeorderinformation-display&/" + (sHash.indexOf("/") === 0 ? sHash.substring(1) : sHash);
+			} else {
+				sHash = "#employeeorderinformation-display";
+			}
+
+			return sUrl + sUrlParameters + sHash;
+		}
+
+		return Opa5.extend("zemployee.test.integration.pages.Common", {
+
+			iStartTheApp : function (oOptions) {
+				oOptions = oOptions || {};
+				// Start the app with a minimal delay to make tests run fast but still async to discover basic timing issues
+				this.iStartMyAppInAFrame(getFrameUrl(oOptions.hash, "serverDelay=50"));
+			},
+
+			iStartTheAppWithDelay : function (sHash, iDelay) {
+				this.iStartMyAppInAFrame(getFrameUrl(sHash, "serverDelay=" + iDelay));
+			},
+
+			iLookAtTheScreen : function () {
+				return this;
+			},
+
+			iStartMyAppOnADesktopToTestErrorHandler : function (sParam) {
+				this.iStartMyAppInAFrame(getFrameUrl("", sParam));
+			},
+
+			createAWaitForAnEntitySet : function  (oOptions) {
+				return {
+					success: function () {
+						var bMockServerAvailable = false,
+							aEntitySet;
+
+						this.getMockServer().then(function (oMockServer) {
+							aEntitySet = oMockServer.getEntitySetData(oOptions.entitySet);
+							bMockServerAvailable = true;
+						});
+
+						return this.waitFor({
+							check: function () {
+								return bMockServerAvailable;
+							},
+							success : function () {
+								oOptions.success.call(this, aEntitySet);
+							}
+						});
+					}
+				};
+			},
+
+			getMockServer : function () {
+				return new Promise(function (success) {
+					Opa5.getWindow().sap.ui.require(["zemployee/localService/mockserver"], function (mockserver) {
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 						success(mockserver.getMockServer());
 					});
 				});

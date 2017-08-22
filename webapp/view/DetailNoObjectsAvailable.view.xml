@@ -1,5 +1,9 @@
 <mvc:View
+<<<<<<< HEAD
 	controllerName="zapp.controller.BaseController"
+=======
+	controllerName="zemployee.controller.BaseController"
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
 

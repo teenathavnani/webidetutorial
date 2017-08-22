@@ -1,6 +1,10 @@
 sap.ui.define([
 		"sap/m/Text",
+<<<<<<< HEAD
 		"zapp/model/formatter"
+=======
+		"zemployee/model/formatter"
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 	], function (Text, formatter) {
 		"use strict";
 

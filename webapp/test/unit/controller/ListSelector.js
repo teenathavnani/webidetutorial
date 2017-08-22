@@ -1,5 +1,9 @@
 sap.ui.define([
+<<<<<<< HEAD
 		"zapp/controller/ListSelector",
+=======
+		"zemployee/controller/ListSelector",
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 		"sap/ui/thirdparty/sinon",
 		"sap/ui/thirdparty/sinon-qunit"
 	], function(ListSelector) {

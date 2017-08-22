@@ -5,7 +5,11 @@ sap.ui.define([
 	], function (Controller, History) {
 		"use strict";
 
+<<<<<<< HEAD
 		return Controller.extend("zapp.controller.BaseController", {
+=======
+		return Controller.extend("zemployee.controller.BaseController", {
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 			/**
 			 * Convenience method for accessing the router in every controller of the application.
 			 * @public

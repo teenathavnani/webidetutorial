@@ -28,6 +28,7 @@
       "entitySet": "UNBINDKEY"
     },
     "/webapp/view/Master.view.xml": {
+<<<<<<< HEAD
       "entitySet": "Customers"
     },
     "/webapp/view/Detail.view.xml": {
@@ -59,6 +60,39 @@
     "services": {
       "js": "fioriJsValidator",
       "xml": "fioriXmlAnalysis"
+=======
+      "entitySet": "Employees"
+    },
+    "/webapp/view/Detail.view.xml": {
+      "entitySet": "Employees"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "sap.ui.ui5-template-plugin.2masterdetail",
+      "templateVersion": "1.38.3",
+      "dateTimeStamp": "Sun, 11 Dec 2016 04:08:35 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/northwind/V3/Northwind/Northwind.svc",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
     }
   },
   "codeCheckingTriggers": {

@@ -36,7 +36,11 @@ sap.ui.define([
 
 		opaTest("Should see the not found master and detail page if an invalid object id has been called", function (Given, When, Then) {
 			// Arrangements
+<<<<<<< HEAD
 			Given.iStartTheApp({ hash : "/Customers/SomeInvalidObjectId" });
+=======
+			Given.iStartTheApp({ hash : "/Employees/SomeInvalidObjectId" });
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 
 			//Actions
 			When.onTheNotFoundPage.iLookAtTheScreen();

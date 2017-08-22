@@ -1,10 +1,19 @@
 sap.ui.define([
+<<<<<<< HEAD
 		"zapp/controller/BaseController",
 		"sap/ui/model/json/JSONModel"
 	], function (BaseController, JSONModel) {
 		"use strict";
 
 		return BaseController.extend("zapp.controller.App", {
+=======
+		"zemployee/controller/BaseController",
+		"sap/ui/model/json/JSONModel"
+	], function (BaseController, JSONModel) {
+		"use strict";
+
+		return BaseController.extend("zemployee.controller.App", {
+>>>>>>> branch 'master' of https://github.com/teenathavnani/webidetutorial.git
 
 			onInit : function () {
 				var oViewModel,
